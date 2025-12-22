@@ -213,10 +213,48 @@ ul {
     gap: 30px;
 }
 
-.about-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    align-items: center;
+.about-preview {
+  padding: 80px 0;
 }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Text side */
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* IMAGE AS BACKGROUND */
+.about-image {
+  height: 350px; /* image height */
+  background-image: url("restaurant/restaurant1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional dark overlay */
+.about-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+
 
 .features-grid,
 .menu-grid,
