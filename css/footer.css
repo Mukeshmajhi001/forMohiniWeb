@@ -1,0 +1,67 @@
+/* ===================================================
+   FOOTER STYLING
+=================================================== */
+
+/* MAIN FOOTER CONTAINER */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px 20px 20px;
+    font-size: 0.95rem;
+}
+
+/* FOOTER GRID LAYOUT */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* LINKS INSIDE FOOTER */
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    color: #fff;
+    transition: var(--transition-speed);
+}
+
+.footer-box ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* CONTACT INFO */
+.footer-box p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* BOTTOM COPYRIGHT BAR */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-box ul li {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
