@@ -1,8 +1,6 @@
-```
 
 [Visit website](https://magicbites.netlify.app/)
 
-```
 
 
 # 🍽️ Magic Bites Restaurant Website
